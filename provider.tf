@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  region                   = "us-east-1"
-  shared_credentials_files = ["/home/jdamp/.aws/credentials"]
-  profile                  = "iamadmin-prod"
+  region                   = var.region
+  shared_credentials_files = ["$HOME/.aws/credentials"]
+  profile                  = var.profile
 }
