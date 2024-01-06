@@ -23,7 +23,7 @@ resource "aws_iam_user_group_membership" "administrators-users" {
 }
 
 resource "aws_iam_user_login_profile" "administrator" {
-  user                    = aws_iam_user.iamadmin.name
+  user = aws_iam_user.iamadmin.name
   // only want the passwort_reset_required when first creating the resource
   // password_reset_required = true
 }
