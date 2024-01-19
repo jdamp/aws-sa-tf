@@ -1,3 +1,4 @@
+/*
 data "aws_ami" "amazon_linux" {
   most_recent = true
   owners      = ["amazon"]
@@ -65,3 +66,4 @@ resource "aws_ec2_instance_state" "myfirstec2" {
 output "ec2_public_ip" {
   value = aws_instance.myfirstec2.public_ip
 }
+*/
